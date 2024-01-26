@@ -1,1 +1,2 @@
 import consolas
+consolas.console()

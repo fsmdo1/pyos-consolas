@@ -65,3 +65,12 @@ commands = {
     "m":loadmod
 
 }
+
+def console():
+    global working_directory
+    while True:
+        command = input("PyOS: ")
+        if command in commands:
+            commands[command]()
+        else:
+            print("Command not found. Type 'help' for a list of commands.")
